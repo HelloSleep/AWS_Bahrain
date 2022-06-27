@@ -3,7 +3,7 @@
 #web시작구성
 resource "aws_launch_configuration" "web_launch" {
   image_id        = var.launch_web
-  instance_type   = "t2.micro"
+  instance_type   = "t3.nano"
   security_groups = [aws_security_group.global-private-sg-web.id]
 
   lifecycle {

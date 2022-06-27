@@ -2,7 +2,7 @@
 #public 배스쳔호스트
 resource "aws_instance" "global-public-ec2-a" {
   ami               = var.ec2_ami
-  instance_type     = "t2.micro"
+  instance_type     = "t3.nano"
   availability_zone = var.az_a
   key_name          = "teamsol-me-south-1"
 
@@ -17,7 +17,7 @@ resource "aws_instance" "global-public-ec2-a" {
 
 resource "aws_instance" "global-public-ec2-c" {
   ami               = var.ec2_ami
-  instance_type     = "t2.micro"
+  instance_type     = "t3.nano"
   availability_zone = var.az_c
   key_name          = "teamsol-me-south-1"
 
@@ -33,8 +33,9 @@ resource "aws_instance" "global-public-ec2-c" {
 #web
 resource "aws_instance" "global-private-ec2-a-web" {
   ami               = var.ec2_ami
-  instance_type     = "t2.micro"
+  instance_type     = "t3.nano"
   availability_zone = var.az_a
+  key_name          = "teamsol-me-south-1"
 
   subnet_id = aws_subnet.global-private-subnet-a-web.id
   vpc_security_group_ids = [
@@ -47,8 +48,9 @@ resource "aws_instance" "global-private-ec2-a-web" {
 
 resource "aws_instance" "global-private-ec2-c-web" {
   ami               = var.ec2_ami
-  instance_type     = "t2.micro"
+  instance_type     = "t3.nano"
   availability_zone = var.az_c
+  key_name          = "teamsol-me-south-1"
 
   subnet_id = aws_subnet.global-private-subnet-c-web.id
   vpc_security_group_ids = [
