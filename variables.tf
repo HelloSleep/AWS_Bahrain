@@ -54,14 +54,14 @@ variable "private_subnet_c_DB" {
 
 variable "ec2_ami" {
   description = "ec2_ami"
-  default     = "ami-0cff7528ff583bf9a" #amazon linux 2 AMI
+  default     = "ami-0bf69afb300c322eb" #amazon linux 2 AMI
   type        = string
 }
 
 variable "launch_web" {
   description = "lauch web"
   type        = string
-  default     = "ami-0cff7528ff583bf9a" #amazon linux 2 AMI
+  default     = "ami-0bf69afb300c322eb" #amazon linux 2 AMI
 }
 
 variable "min_size" {
