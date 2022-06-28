@@ -17,9 +17,9 @@ variable "public_subnet_c" {
 }
 
 variable "az_a" {
-  description = "az b"
+  description = "az a"
   type        = string
-  default     = "me-south-1b"
+  default     = "me-south-1a"
 }
 
 variable "az_c" {
