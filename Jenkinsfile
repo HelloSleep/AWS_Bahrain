@@ -40,4 +40,9 @@ pipeline {
           }
         }
     }
+     post {
+        always{
+            sh 'terraform state list'
+        }
+    }
 }
