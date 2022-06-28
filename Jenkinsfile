@@ -21,7 +21,12 @@ pipeline {
         }
         stage('terraform apply') {
             steps{
-                sh 'terraform apply --auto-approve'
+                sh 'echo "this action will apply terraform resource"'
+          script {
+              if(params.ACTION =='apply'){
+                  sh 'terraform apply -auto-approve'
+              }
+          }
             }
         }
         stage('choice terraform destroy'){
