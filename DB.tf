@@ -15,12 +15,12 @@ resource "aws_db_instance" "global-master-db" {
   engine                = "mysql"
   engine_version        = "5.7.22"
   instance_class        = "db.t2.micro"
-  name                  = "grooming_bahrainmasterdb"
-  username              = "admin"
-  password              = "password"
-  db_subnet_group_name  = aws_db_subnet_group.global-subnet-group.id
-  multi_az              = true
-  skip_final_snapshot   = true
+  # name                  = "grooming_bahrainmasterdb"
+  username             = "admin"
+  password             = "password"
+  db_subnet_group_name = aws_db_subnet_group.global-subnet-group.id
+  multi_az             = true
+  skip_final_snapshot  = true
   vpc_security_group_ids = [
     aws_security_group.global-private-sg-db.id
   ]
