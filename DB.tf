@@ -15,7 +15,7 @@ resource "aws_db_instance" "bahrain-master-db" {
   engine                = "mysql"
   engine_version        = "5.7.25"
   instance_class        = "db.t3.micro"
-  name                  = "grooming2918301"
+  db_name               = "grooming2918301"
   username              = "admin"
   password              = "password"
   db_subnet_group_name  = aws_db_subnet_group.global-subnet-group.id
