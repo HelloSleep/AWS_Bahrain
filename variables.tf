@@ -57,21 +57,3 @@ variable "ec2_ami" {
   default     = "ami-0bf69afb300c322eb" #amazon linux 2 AMI
   type        = string
 }
-
-variable "launch_web" {
-  description = "lauch web"
-  type        = string
-  default     = "ami-0bf69afb300c322eb" #amazon linux 2 AMI
-}
-
-variable "min_size" {
-  description = "The minimum number of EC2 Instance in the ASG"
-  type        = number
-  default     = 2
-}
-
-variable "max_size" {
-  description = "The maximum number of EC2 Instance in the ASG"
-  type        = number
-  default     = 3
-}
