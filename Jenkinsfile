@@ -46,11 +46,11 @@ pipeline {
         }
     
         success {
- 		slackSend channel: 'devops', message: 'it is builded succesed'
+ 		slackSend channel: 'devops', message: 'Bahrain region is builded succesed'
 	}
 	
 	failure {
-	 		slackSend channel: 'devops', message: 'This build is failed'
+	 		slackSend channel: 'devops', message: 'Bahrain region build is failed'
 	 }
 	
     
