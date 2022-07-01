@@ -54,5 +54,5 @@ pipeline {
 	// }
 	// always {
     //         sh 'terraform state list'
-  }
+//   }
 }
