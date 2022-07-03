@@ -19,13 +19,13 @@ variable "public_subnet_c" {
 variable "az_a" {
   description = "az a"
   type        = string
-  default     = "me-south-1a"
+  default     = "eu-west-3a"
 }
 
 variable "az_c" {
   description = "az c"
   type        = string
-  default     = "me-south-1c"
+  default     = "eu-west-3b"
 }
 
 variable "private_subnet_a_web" {
@@ -54,6 +54,6 @@ variable "private_subnet_c_DB" {
 
 variable "ec2_ami" {
   description = "ec2_ami"
-  default     = "ami-0bf69afb300c322eb" #amazon linux 2 AMI
+  default     = "ami-0f5094faf16f004eb" #amazon linux 2 AMI
   type        = string
 }
